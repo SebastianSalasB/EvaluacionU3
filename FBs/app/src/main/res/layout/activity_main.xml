@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7C94C5"
+    android:backgroundTint="#002E2750"
+    android:orientation="vertical"
+    android:padding="16sp"
+    tools:context=".MainActivity"
+    tools:menu="@menu/main_menu">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7C94C5"
+        android:hint="Nombre de Sensor"
+        app:boxStrokeColor="#1E34A6"
+        app:hintTextColor="#415497">
+
+        <EditText
+            android:id="@+id/nomSensor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#7C94C5"
+            android:contentDescription="Nombre de Sensor"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingTop="20dp"
+            tools:ignore="EditableContentDescCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tipo"
+        app:boxStrokeColor="#1E34A6"
+        app:hintTextColor="#1E34A6">
+
+        <EditText
+            android:id="@+id/nomTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#7C94C5"
+            android:contentDescription="Tipo de Sensor"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingTop="20dp"
+            tools:ignore="EditableContentDescCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor"
+        app:boxStrokeColor="#1E34A6"
+        app:hintTextColor="#415497">
+
+        <EditText
+            android:id="@+id/nomValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#7C94C5"
+            android:contentDescription="Valor"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingTop="20dp"
+            tools:ignore="EditableContentDescCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ubicacion"
+        app:boxStrokeColor="#1E34A6"
+        app:hintTextColor="#1E34A6">
+
+        <EditText
+            android:id="@+id/nomUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#7C94C5"
+            android:contentDescription="Ubicacion"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingTop="20dp"
+            tools:ignore="EditableContentDescCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Observacion"
+        app:boxStrokeColor="#1E34A6"
+        app:hintTextColor="#1E34A6">
+
+        <EditText
+            android:id="@+id/nomObs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#7C94C5"
+            android:contentDescription="Observacion"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingTop="20dp"
+            tools:ignore="EditableContentDescCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16sp"
+        android:paddingBottom="16sp"
+        android:text="Lista Sensores"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lv_usurios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#587ECA"
+        android:scrollbarSize="8dp" />
+</LinearLayout>
